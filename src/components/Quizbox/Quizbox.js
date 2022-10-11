@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Quizbox.css'
 const Quizbox = ({quiz}) => {
-   const {total,logo,name}=quiz;
+   const {id,total,logo,name}=quiz;
     return (
        <div>
         <div className='header'>
@@ -14,7 +15,7 @@ const Quizbox = ({quiz}) => {
           <div className='details'>
           <h1> {name} </h1>  
           <p>total Quizzes: {total}</p>
-          <button>Start</button>
+          <button><Link to={`/topics/${id}`}> start</Link></button>
           </div>
         </div>
        </div>

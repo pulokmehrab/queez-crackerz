@@ -17,8 +17,16 @@ const Header = () => {
         
        </div>
         <div className='header-back'>
-         <img src={image}>
+        <div>
+        <img src={image}>
          </img>
+        </div>
+         <div className='para'>
+         <h2>There is no cramming
+             for a test of character.
+              It always comes as a pop quiz
+              </h2>
+         </div>
         </div>
       </div>
     );

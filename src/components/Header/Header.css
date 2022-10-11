@@ -16,3 +16,24 @@
 .header a:hover{
     color: rgb(15, 12, 6);
 }
+.header-back img{
+
+    width: 40%; 
+
+margin-top: 20px;
+border-radius: 30px;
+margin-bottom: 0px;  
+}
+.header-back{
+    margin-top: 10px;
+  display: flex;
+  border-radius: 20px;
+    align-items: center;
+background-color: rgb(12, 7, 7);
+height: 200;
+}
+h2{
+    color: rgb(236, 133, 65);
+
+}
+

@@ -1,0 +1,18 @@
+.nav-color{
+    display: flex;
+    background-color: rgb(222, 46, 46);
+    padding: 20px;
+    align-items: center;
+   justify-content: space-between;
+   
+}
+.header a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 30px;
+    padding-right: 10px;
+}
+.header a:hover{
+    color: rgb(15, 12, 6);
+}

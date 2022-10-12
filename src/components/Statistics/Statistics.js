@@ -38,6 +38,7 @@ const Statistics = () => {
         
     return (
         <div>
+
             <LineChart
       width={600}
       height={300}

@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div>
             {
-                allQuizes.map(quiz =><Quizbox
+                allQuizes?.map(quiz =><Quizbox
                 key={quiz.id}
                 quiz={quiz}
                 ></Quizbox>)

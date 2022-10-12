@@ -9,7 +9,7 @@ const Topics = () => {
     return (
         <div>{
         
-            questionsDatas.map(questionsData=>
+            questionsDatas?.map(questionsData=>
             <Question
              key ={questionsData.id}
              questionsData={questionsData}

@@ -14,7 +14,7 @@ const Question = ({questionsData}) => {
     }
 
     const showAnswer=()=>{
-        alert(`Correct answer is : ${correctAnswer}`);
+        toast.info(`Correct answer is : ${correctAnswer}`);
     }
         return (
             <div>

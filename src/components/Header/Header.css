@@ -27,9 +27,9 @@ margin-bottom: 0px;
 .header-back{
     margin-top: 10px;
   display: flex;
-  border-radius: 20px;
+  
     align-items: center;
-background-color: rgb(232, 229, 229);
+background-color: rgb(12, 4, 4);
 height: 200;
 }
 h2{

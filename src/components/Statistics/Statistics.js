@@ -40,7 +40,7 @@ const Statistics = () => {
         
     return (
         <div>
-       <ResponsiveContainer width="100%" aspect={2/1}>
+       <ResponsiveContainer width="100%" aspect={3/1}>
             <LineChart
       width={600}
       height={300}

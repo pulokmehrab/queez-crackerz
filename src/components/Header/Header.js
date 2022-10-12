@@ -10,7 +10,8 @@ const Header = () => {
            <h1>Quiz Ranker </h1>
         </div>
          <nav className='header'>
-          <Link to='/home'>Home</Link> 
+          <Link to='/'>Home</Link>   
+          {/* /pulok */}
           <Link to='/statistics'>Statistics</Link> 
           <Link to='/blogs'>Blog</Link>
           {/* <Link to='/topics'>Topics</Link> */}

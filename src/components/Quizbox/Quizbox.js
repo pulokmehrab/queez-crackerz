@@ -4,10 +4,8 @@ import './Quizbox.css'
 const Quizbox = ({quiz}) => {
    const {id,total,logo,name}=quiz;
     return (
-       <div>
-        <div className='header'>
+       <div className='header'>
         
-        </div>
          <div className='img-sec'>
             <div>
                <img src={logo}></img>

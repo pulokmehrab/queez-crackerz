@@ -17,9 +17,9 @@ const Question = ({questionsData}) => {
         toast.info(`Correct answer is : ${correctAnswer}`);
     }
         return (
-            <div>
+            <div className='question-area'>
             <p> question: {questionsData.question}</p>
-            <p onClick={()=>showAnswer()}>👁</p>
+            <p className='eye' onClick={()=>showAnswer()}>👁</p>
             
                 {
                     options?.map((option, i) => <div className='options'> <input onClick={()=>handleSubmit(option)} type='radio' id={option} value={option} name={id}/> {option} <br /></div>)

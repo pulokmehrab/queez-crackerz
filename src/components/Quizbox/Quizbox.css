@@ -27,3 +27,17 @@ button{
    border-radius: 2px;
     background-color: rgb(244, 11, 11);
 }
+@media screen and (max-width: 580px){
+    .img-sec{
+        width: 80%;
+        margin-left: 30px;
+    }
+    .details{
+        margin-right: 0%;
+        padding: 5px;
+    }
+    .img-sec img{
+        width: 50%;
+    }
+    
+}

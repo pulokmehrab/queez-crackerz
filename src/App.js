@@ -4,6 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Main from './Layout/Main';
 import Topics from './components/Topics/Topics';
+import Blogs from './components/Blog/Blogs';
+import Statistics from './components/Statistics/Statistics';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const router =createBrowserRouter([
@@ -24,6 +28,14 @@ function App() {
         return fetch(` https://openapi.programming-hero.com/api/quiz/${params.questionId}`)
        },
         element:<Topics></Topics>
+      },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path:'/blogs',
+        element: <Blogs></Blogs>
       }
      
     ]
@@ -37,7 +49,7 @@ function App() {
     <div className="App">
       
       <RouterProvider router={router}></RouterProvider>
-      
+      <ToastContainer />
     </div>
   );
 }

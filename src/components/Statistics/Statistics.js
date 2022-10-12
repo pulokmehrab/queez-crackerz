@@ -6,7 +6,9 @@ import {
     YAxis,
     CartesianGrid,
     Tooltip,
-    Legend
+    Legend,
+    ResponsiveContainer
+
   } from "recharts";
 const Statistics = () => {
     const data =[
@@ -38,7 +40,7 @@ const Statistics = () => {
         
     return (
         <div>
-
+       <ResponsiveContainer width="100%" aspect={2/1}>
             <LineChart
       width={600}
       height={300}
@@ -63,10 +65,12 @@ const Statistics = () => {
       />
       <Line type="monotone" dataKey="total" stroke="#82ca9d" />
     </LineChart>
+    </ResponsiveContainer>
     <div>
         <h1> here is the summary</h1>
     </div>
         </div>
+
     );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { toast } from 'react-toastify';
-
+import './Question.css'
 const Question = ({questionsData}) => {
     const{question,options, id,  correctAnswer}=questionsData;
     console.log(question);
@@ -12,15 +12,19 @@ const Question = ({questionsData}) => {
         }
         console.log(answer)
     }
+
+    const showAnswer=()=>{
+        alert(`Correct answer is : ${correctAnswer}`);
+    }
         return (
-        <div>
+            <div>
             <p> question: {questionsData.question}</p>
+            <p onClick={()=>showAnswer()}>👁</p>
             
                 {
-                    options?.map((option, i) => <div> <input onClick={()=>handleSubmit(option)} type='radio' id={option} value={option} name={id}/> {option} <br /></div>)
+                    options?.map((option, i) => <div className='options'> <input onClick={()=>handleSubmit(option)} type='radio' id={option} value={option} name={id}/> {option} <br /></div>)
                 }
                 
-           <p><button type="submit"></button> {options}</p>
             
         </div>
     );

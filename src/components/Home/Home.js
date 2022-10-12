@@ -4,12 +4,14 @@ import Quizbox from '../Quizbox/Quizbox';
 
 const Home = () => {
     
-    const quizes =useLoaderData().data
+    const quizes =useLoaderData();
+    const allQuizes = quizes.data;
+    console.log(allQuizes);
     console.log(quizes);
     return (
         <div>
             {
-                quizes.map(quiz =><Quizbox
+                allQuizes.map(quiz =><Quizbox
                 key={quiz.id}
                 quiz={quiz}
                 ></Quizbox>)
